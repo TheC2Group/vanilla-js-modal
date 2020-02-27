@@ -2,7 +2,7 @@
 /*!
  * vanilla-js-modal
  * https://github.com/TheC2Group/vanilla-js-modal
- * @version 1.0.0
+ * @version 1.0.1
  * @license MIT (c) The C2 Group (c2experience.com)
  */
 'use strict';
@@ -330,8 +330,7 @@ document.addEventListener('keydown', function (e) {
   var activeModal = getActiveModal();
   if (!activeModal) return;
   activeModal.close();
-}); // TODO: test in IE/Edge for closest support
-
+});
 document.addEventListener('focus', function (e) {
   var activeModal = getActiveModal();
   var selectorIsInModal = false;
@@ -371,7 +370,7 @@ MODAL.setDefaults({
 
 document.addEventListener('click', function (e) {
 
-    if (e.target.getAttribute('href') && e.target.getAttribute('href').includes('#Modal-')) {
+    if (e.target.getAttribute('href') && e.target.getAttribute('href').indexOf('#Modal-') !== -1) {
         e.preventDefault();
         var modal = MODAL.create(e.target.getAttribute('href'));
 

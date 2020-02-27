@@ -321,7 +321,6 @@ document.addEventListener('keydown', function (e) {
     activeModal.close();
 });
 
-// TODO: test in IE/Edge for closest support
 document.addEventListener('focus', function (e) {
     var activeModal = getActiveModal();
     var selectorIsInModal = false;

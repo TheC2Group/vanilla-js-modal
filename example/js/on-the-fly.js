@@ -10,7 +10,7 @@ MODAL.setDefaults({
 
 document.addEventListener('click', function (e) {
 
-    if (e.target.getAttribute('href') && e.target.getAttribute('href').includes('#Modal-')) {
+    if (e.target.getAttribute('href') && e.target.getAttribute('href').indexOf('#Modal-') !== -1) {
         e.preventDefault();
         var modal = MODAL.create(e.target.getAttribute('href'));
 

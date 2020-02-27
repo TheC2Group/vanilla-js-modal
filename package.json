@@ -1,6 +1,6 @@
 {
   "name": "vanilla-js-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add accessible modals to a web page using vanilla JS.",
   "jsnext:main": "modal-handler.js",
   "main": "cjs/modal-handler.js",

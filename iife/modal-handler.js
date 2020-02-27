@@ -1,7 +1,7 @@
 /*!
  * vanilla-js-modal
  * https://github.com/TheC2Group/vanilla-js-modal
- * @version 1.0.0
+ * @version 1.0.1
  * @license MIT (c) The C2 Group (c2experience.com)
  */
 var MODAL = (function (eventHandler) {
@@ -328,8 +328,7 @@ var MODAL = (function (eventHandler) {
       var activeModal = getActiveModal();
       if (!activeModal) return;
       activeModal.close();
-    }); // TODO: test in IE/Edge for closest support
-
+    });
     document.addEventListener('focus', function (e) {
       var activeModal = getActiveModal();
       var selectorIsInModal = false;
