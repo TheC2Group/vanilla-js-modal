@@ -1,0 +1,44 @@
+{
+  "name": "vanilla-js-modal",
+  "version": "1.0.0",
+  "description": "Add accessible modals to a web page using vanilla JS.",
+  "jsnext:main": "modal-handler.js",
+  "main": "cjs/modal-handler.js",
+  "export": "MODAL",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "bundle-example": "browserify example/js/simple.js -o example/bundle/simple.js && browserify example/js/on-the-fly.js -o example/bundle/on-the-fly.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TheC2Group/vanilla-js-modal.git"
+  },
+  "keywords": [
+    "modal"
+  ],
+  "author": "The C2 Group",
+  "license": "MIT",
+  "copyright": "(c) The C2 Group (c2experience.com)",
+  "bugs": {
+    "url": "https://github.com/TheC2Group/vanilla-js-modal/issues"
+  },
+  "homepage": "https://github.com/TheC2Group/vanilla-js-modal",
+  "dependencies": {
+    "c2-event-handler": "^2.5.2",
+    "gulp": "^4.0.2",
+    "gulp-run": "^1.7.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "acorn": "^6.0.0",
+    "browserify": "^16.2.3",
+    "rollup": "^1.12.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0"
+  }
+}
